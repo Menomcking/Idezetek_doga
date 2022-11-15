@@ -21,4 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('output').appendChild(li);
         }
     });
+    document.getElementById('secondex')?.addEventListener('click', async () => {
+        let response = await fetch('quotes.json');
+        let outcome = await response.json();
+        document.getElementById('output').innerHTML = "";
+
+        for(let u of outcome.quotes){
+                let li = document.createElement('li');
+                li.innerHTML = u.quote + " " + u.author; 
+                console.log(u.quote + " " + u.author);   
+                document.getElementById('output').appendChild(li);
+            }
+    });
 });
