@@ -1,7 +1,6 @@
 {
   "name": "szamonkeres",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "npx webpack watch"
@@ -19,5 +18,14 @@
     "ts-loader": "^9.4.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Menomcking/Idezetek_doga.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Menomcking/Idezetek_doga/issues"
+  },
+  "homepage": "https://github.com/Menomcking/Idezetek_doga#readme",
+  "description": ""
 }
